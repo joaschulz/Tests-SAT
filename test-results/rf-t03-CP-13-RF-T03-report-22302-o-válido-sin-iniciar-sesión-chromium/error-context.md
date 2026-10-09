@@ -59,10 +59,10 @@ Error: El reporte público fue rechazado (HTTP 401): Sesión inválida o vencida
               - option "Otro"
           - generic [ref=e28]:
             - generic [ref=e29]: Descripción breve *
-            - textbox "Describa lo que observa..." [ref=e30]: Incidencia E2E-20261001125858-3EAI-CP-13
+            - textbox "Describa lo que observa..." [ref=e30]: Incidencia E2E-20261003201736-GQCP-CP-13
           - generic [ref=e31]:
             - generic [ref=e32]: Ubicación o referencia *
-            - 'textbox "Ej: Calle Mitre 420, esquina frente al almacén" [ref=e33]': Referencia E2E-20261001125858-3EAI-CP-13
+            - 'textbox "Ej: Calle Mitre 420, esquina frente al almacén" [ref=e33]': Referencia E2E-20261003201736-GQCP-CP-13
           - generic [ref=e34]:
             - generic [ref=e35]: Imagen (opcional)
             - generic [ref=e36] [cursor=pointer]:

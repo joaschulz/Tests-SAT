@@ -27,7 +27,11 @@ pnpm test:e2e:report
 
 Cada test usa un marcador `E2E-...-CP-XX` en los datos que crea y verifica el resultado antes de cerrar su sesión. La suite no supone que cerrar y volver a entrar restaure un estado determinado. Puede haber casos `BLOQUEADO` cuando falta una cuenta configurada, una alerta automática pendiente o una acción que la interfaz no ofrece.
 
-Los contactos reciben teléfonos distintos: la instancia puede conservar datos entre sesiones y rechaza los números duplicados. Si el SAT rechaza el reporte público, CP-13 a CP-16 fallan con el estado HTTP y el mensaje del servidor; CP-06 a CP-12 quedan bloqueados porque no pueden obtener la alerta vecinal que necesitan como precondición.
+Los contactos reciben teléfonos distintos: la instancia puede conservar datos entre sesiones y rechaza los números duplicados. Si el SAT rechaza el reporte público, CP-13 a CP-16 fallan con el estado HTTP y el mensaje del servidor; sólo CP-06 requiere una alerta vecinal y queda bloqueado por esa precondición. CP-07 a CP-12 admiten cualquier alerta pendiente, incluidas las automáticas. Cada uno espera la carga de la lista y se bloquea sólo si no hay una alerta disponible o si la acción requerida no aparece en la interfaz. Validar y rechazar consumen alertas pendientes, por lo que la disponibilidad puede cambiar durante una ejecución completa.
+
+En RF-T02 la suite selecciona tarjetas `PENDIENTE` visibles y lee de la pantalla el código de la alerta; la respuesta HTTP sólo sincroniza la carga y sirve como evidencia si la lista no aparece. Los casos que no consumen alertas corren antes de CP-07 y CP-08. CP-12 comprueba la alerta validada por CP-07 dentro de la misma ejecución; si se ejecuta aisladamente y no existe esa acción, valida una pendiente propia. Así se pueden cubrir los casos con dos alertas automáticas, sin depender de que el servidor conserve o reinicie los datos entre sesiones.
+
+En la interfaz revisada, CP-09 y CP-11 no encontraron una acción visible «Mantener pendiente» para la alerta automática seleccionada y quedaron bloqueados por ese motivo. Que una incidencia figure en Historial pero no en Pendientes no demuestra que sea un *mock*; podría ser un registro histórico u otra clase de dato precargado. La suite no infiere su implementación interna a partir de esa diferencia.
 
 Los resultados se guardan en:
 

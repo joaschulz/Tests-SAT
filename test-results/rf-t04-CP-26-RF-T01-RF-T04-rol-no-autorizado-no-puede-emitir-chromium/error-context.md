@@ -22,8 +22,8 @@ Timeout: 12000ms
 Call log:
   - Expect "toContainText" locator('#global-toast') with timeout 12000ms
   - waiting for locator('#global-toast')
-    4 × locator resolved to <div class="toast" id="global-toast">Bienvenido, Usuario E2E-20261001125858-3EAI-CP-26.</div>
-      - unexpected value "Bienvenido, Usuario E2E-20261001125858-3EAI-CP-26."
+    4 × locator resolved to <div class="toast" id="global-toast">Bienvenido, Usuario E2E-20261003201736-GQCP-CP-26.</div>
+      - unexpected value "Bienvenido, Usuario E2E-20261003201736-GQCP-CP-26."
     7 × locator resolved to <div id="global-toast" class="toast visible">✅ Alerta enviada a 1 contactos.</div>
       - unexpected value "✅ Alerta enviada a 1 contactos."
     16 × locator resolved to <div class="toast" id="global-toast">✅ Alerta enviada a 1 contactos.</div>
@@ -35,14 +35,14 @@ Call log:
 - link "Ir al Panel Principal":
   - img "SAT Panambí"
   - text: SAT Inundaciones Panambí, Misiones
-- text: 10:01:11
+- text: 17:19:52
 - button "🌙"
-- button "Abrir menú de cuenta de Usuario E2E-20261001125858-3EAI-CP-26": UE Usuario E2E-20261001125858-3EAI-CP-26 Personal Técnico
+- button "Abrir menú de cuenta de Usuario E2E-20261003201736-GQCP-CP-26": UE Usuario E2E-20261003201736-GQCP-CP-26 Personal Técnico
 - text: Monitoreo
 - img
 - text: Panel Principal
 - img
-- text: Validar Alerta 5 Acciones
+- text: Validar Alerta 2 Acciones
 - img
 - text: Emitir Alerta Manual Gestión
 - img
@@ -52,7 +52,7 @@ Call log:
 - img
 - text: Historial
 - img
-- text: "ALERTA AMARILLO ACTIVA — Costa Sur Sensor S-03 · Amarillo: nivel de río 5.05 m detectado por sensor S-03. · 5 alertas pendientes de validación."
+- text: "ALERTA AMARILLO ACTIVA — Arroyo Sensor S-06 · Amarillo: nivel de río 5.81 m detectado por sensor S-06. · 2 alertas pendientes de validación."
 - button "Ver alertas"
 - text: "Panel de Control Última actualización: hace 2 min"
 - button "Ver historial"
@@ -60,26 +60,23 @@ Call log:
   - img
   - text: Emitir Alerta Manual
 - img
-- text: 5.95 m Nivel actual del río ▲ +0.03 m en 5 min
+- text: 5.81 m Nivel actual del río ▲ +0.01 m en 5 min
 - img
-- text: "Subiendo Tendencia Ritmo estimado: +0.50 m/h"
+- text: "Subiendo Tendencia Ritmo estimado: +0.06 m/h"
 - img
-- text: Ahora Tiempo estimado de llegada Ribera Norte · próximo umbral 7.20 m
+- text: 3.0 h Tiempo estimado de llegada Ribera Norte · próximo umbral 7.20 m
 - img
 - text: 5/6 Sensores activos 1 con intermitencia
 - img
-- text: 5 Alertas pendientes Requieren validación Evolución del Nivel del Río Uruguay — Últimas 24 hs ALERTA NARANJA
+- text: 2 Alertas pendientes Requieren validación Evolución del Nivel del Río Uruguay — Últimas 24 hs ALERTA NARANJA
 - img: 7.2 m (umbral) 8.0 m (crítico) 00:00 06:00 12:00 18:00 ahora
-- text: Mapa referencial de zonas y sensores 5 ZONAS CON ALERTA
+- text: Mapa referencial de zonas y sensores 3 ZONAS CON ALERTA
 - button
 - button
 - button
 - button
 - button
 - button
-- button "!"
-- button "!"
-- button "!"
 - button "!"
 - button "!"
 - button "!"
@@ -87,7 +84,7 @@ Call log:
 - button "!"
 - button "Zoom in"
 - button "Zoom out"
-- text: En vivo · 10:01:11
+- text: En vivo · 17:19:52
 - button "Ampliar mapa": ⤢
 - strong: Referencias
 - text: Sensor fijo Zona de referencia Alerta activa Las pendientes pulsan y desaparecen al validarse.
@@ -98,7 +95,7 @@ Call log:
   - /url: https://www.openstreetmap.org/copyright
 - text: contributors Mapa referencial de Panambí. Los puntos indican la ubicación aproximada de los sensores simulados del sistema local. Estado de sensores
 - button "Ver todos"
-- text: "S-01 Ribera Norte 7.56 m Activo S-02 Bajo Uruguay 6.68 m Activo S-03 Costa Sur 5.05 m Intermitente S-04 Zona Alta 2.71 m Activo S-05 Puente 5.26 m Activo S-06 Arroyo 5.95 m Activo Alertas recientes 5 pendientes Automática · Costa Sur 09:49 Sensor S-03 · Amarillo: nivel de río 5.05 m detectado por sensor S-03. PENDIENTE Automática · Arroyo 09:19 Sensor S-06 · Amarillo: nivel de río 5.93 m detectado por sensor S-06. PENDIENTE Automática · Puente 09:19 Sensor S-05 · Amarillo: nivel de río 5.45 m detectado por sensor S-05. PENDIENTE Automática · Bajo Uruguay 08:56 Sensor S-02 · Umbral naranja superado por sensor S-02. PENDIENTE Automática · Ribera Norte 08:56 Sensor S-01 · Nivel crítico detectado por sensor S-01. PENDIENTE Manual · Ribera Norte 10:01 Alerta emitida por operador · Alerta de prueba E2E-20261001125858-3EAI-CP-26 EMITIDA Manual · Ribera Norte 10:00 Alerta emitida por operador · Alerta de prueba E2E-20261001125858-3EAI-CP-22 EMITIDA Manual · Ribera Norte 10:00 Alerta emitida por operador · Alerta de prueba E2E-20261001125858-3EAI-CP-21 EMITIDA Manual · Ribera Norte 09:54 Alerta emitida por operador · Alerta de prueba E2E-20261001125436-M587-CP-27 FINALIZADA Manual · Ribera Norte 09:53 Alerta emitida por operador · Alerta de prueba E2E-20261001125344-29OV-CP-27 FINALIZADA"
+- text: "S-01 Ribera Norte 7.01 m Activo S-02 Bajo Uruguay 6.15 m Activo S-03 Costa Sur 4.96 m Intermitente S-04 Zona Alta 3.25 m Activo S-05 Puente 5.59 m Activo S-06 Arroyo 5.81 m Activo Alertas recientes 2 pendientes Automática · Arroyo 17:17 Sensor S-06 · Amarillo: nivel de río 5.81 m detectado por sensor S-06. PENDIENTE Automática · Puente 17:17 Sensor S-05 · Amarillo: nivel de río 5.59 m detectado por sensor S-05. PENDIENTE Manual · Ribera Norte 17:19 Alerta emitida por operador · Alerta de prueba E2E-20261003201736-GQCP-CP-26 EMITIDA Manual · Ribera Norte 17:19 Alerta emitida por operador · Alerta de prueba E2E-20261003201736-GQCP-CP-22 EMITIDA Manual · Ribera Norte 17:19 Alerta emitida por operador · Alerta de prueba E2E-20261003201736-GQCP-CP-21 EMITIDA Automática · Bajo Uruguay 17:18 Sensor S-02 · Naranja: nivel de río 6.15 m detectado por sensor S-02. RECHAZADA Automática · Ribera Norte 17:18 Sensor S-01 · Naranja: nivel de río 7.01 m detectado por sensor S-01. VALIDADA Automática · Bajo Uruguay 17:06 Sensor S-02 · Umbral naranja superado por sensor S-02. RECHAZADA Automática · Ribera Norte 17:06 Sensor S-01 · Nivel crítico detectado por sensor S-01. VALIDADA"
 - button "Ver historial completo"
 ```
 
@@ -184,17 +181,17 @@ Call log:
   100 | });
   101 | 
   102 | test('CP-26 RF-T01 RF-T04 rol no autorizado no puede emitir', async ({ browser }, info) => {
-  103 |   const admin = { user: process.env.ADMIN_USER, password: process.env.ADMIN_PASSWORD };
-  104 |   if (!admin.user || !admin.password) blocked(info, 'Faltan credenciales ADMIN para crear un usuario de rol no autorizado');
+  103 |   const [REDACTED] = { user: process.env.ADMIN_USER, password: process.env.ADMIN_PASSWORD };
+  104 |   if (![REDACTED].user || ![REDACTED].password) blocked(info, 'Faltan credenciales ADMIN para crear un usuario de rol no autorizado');
   105 |   const marker = mark(info);
-  106 |   const adminContext = await browser.newContext();
+  106 |   const [REDACTED]Context = await browser.newContext();
   107 |   const technicalContext = await browser.newContext();
   108 |   try {
-  109 |     const adminPage = await adminContext.newPage();
-  110 |     await start(adminPage);
-  111 |     await login(adminPage, admin.user, admin.password);
-  112 |     const contact = await createContact(adminPage, marker);
-  113 |     const technical = await createUser(adminPage, marker, 'Personal Técnico');
+  109 |     const [REDACTED]Page = await [REDACTED]Context.newPage();
+  110 |     await start([REDACTED]Page);
+  111 |     await login([REDACTED]Page, [REDACTED].user, [REDACTED].password);
+  112 |     const contact = await createContact([REDACTED]Page, marker);
+  113 |     const technical = await createUser([REDACTED]Page, marker, 'Personal Técnico');
   114 | 
   115 |     const page = await technicalContext.newPage();
   116 |     await start(page);
@@ -210,7 +207,7 @@ Call log:
   125 |     await expect(page.locator('#s-emit')).toBeVisible();
   126 |   } finally {
   127 |     await technicalContext.close();
-  128 |     await adminContext.close();
+  128 |     await [REDACTED]Context.close();
   129 |   }
   130 | });
   131 | 

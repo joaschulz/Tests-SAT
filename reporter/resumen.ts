@@ -19,6 +19,7 @@ class ResumenReporter implements Reporter {
   }
 
   onEnd(): void {
+    this.entries.sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }));
     const output = path.resolve('reports');
     fs.mkdirSync(output, { recursive: true });
     const summary = {

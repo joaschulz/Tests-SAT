@@ -1,17 +1,17 @@
 {
-  "ejecucion": "E2E-20261001125858-3EAI",
-  "fecha": "2026-10-01T13:01:30.743Z",
+  "ejecucion": "E2E-20261003201736-GQCP",
+  "fecha": "2026-10-03T20:20:06.936Z",
   "total": 27,
-  "aprobados": 13,
+  "aprobados": 18,
   "fallidos": 5,
-  "bloqueados": 9,
+  "bloqueados": 4,
   "casos": [
     {
       "id": "CP-01",
       "requisito": "RF-T01",
       "caso": "CP-01 RF-T01 inicio de sesión con credenciales válidas",
       "estado": "APROBADO",
-      "duracionMs": 3225,
+      "duracionMs": 6622,
       "detalle": ""
     },
     {
@@ -19,7 +19,7 @@
       "requisito": "RF-T01",
       "caso": "CP-02 RF-T01 contraseña incorrecta impide el acceso",
       "estado": "APROBADO",
-      "duracionMs": 3281,
+      "duracionMs": 2408,
       "detalle": ""
     },
     {
@@ -27,7 +27,7 @@
       "requisito": "RF-T01",
       "caso": "CP-03 RF-T01 usuario o contraseña vacíos impiden el acceso @smoke",
       "estado": "APROBADO",
-      "duracionMs": 3294,
+      "duracionMs": 2301,
       "detalle": ""
     },
     {
@@ -35,79 +35,79 @@
       "requisito": "RF-T01",
       "caso": "CP-04 RF-T01 funciones visibles según el rol",
       "estado": "APROBADO",
-      "duracionMs": 6732,
+      "duracionMs": 5128,
       "detalle": ""
     },
     {
       "id": "CP-05",
       "requisito": "RF-T02",
       "caso": "CP-05 RF-T02 visualización de alerta automática pendiente",
-      "estado": "BLOQUEADO",
-      "duracionMs": 3314,
-      "detalle": "No hay alerta automática pendiente visible en esta sesión"
+      "estado": "APROBADO",
+      "duracionMs": 2725,
+      "detalle": ""
     },
     {
       "id": "CP-06",
       "requisito": "RF-T02",
       "caso": "CP-06 RF-T02 reporte vecinal aparece como alerta pendiente",
       "estado": "BLOQUEADO",
-      "duracionMs": 2680,
+      "duracionMs": 2343,
       "detalle": "No se pudo crear la alerta vecinal requerida: El reporte público fue rechazado (HTTP 401): Sesión inválida o vencida. Inicie sesión nuevamente."
     },
     {
       "id": "CP-07",
       "requisito": "RF-T02",
       "caso": "CP-07 RF-T02 validación cambia estado y registra auditoría",
-      "estado": "BLOQUEADO",
-      "duracionMs": 2853,
-      "detalle": "No se pudo crear la alerta vecinal requerida: El reporte público fue rechazado (HTTP 401): Sesión inválida o vencida. Inicie sesión nuevamente."
+      "estado": "APROBADO",
+      "duracionMs": 5164,
+      "detalle": ""
     },
     {
       "id": "CP-08",
       "requisito": "RF-T02",
       "caso": "CP-08 RF-T02 rechazo con observación queda auditado",
-      "estado": "BLOQUEADO",
-      "duracionMs": 2950,
-      "detalle": "No se pudo crear la alerta vecinal requerida: El reporte público fue rechazado (HTTP 401): Sesión inválida o vencida. Inicie sesión nuevamente."
+      "estado": "APROBADO",
+      "duracionMs": 4889,
+      "detalle": ""
     },
     {
       "id": "CP-09",
       "requisito": "RF-T02",
       "caso": "CP-09 RF-T02 mantener pendiente conserva estado y observación",
       "estado": "BLOQUEADO",
-      "duracionMs": 2244,
-      "detalle": "No se pudo crear la alerta vecinal requerida: El reporte público fue rechazado (HTTP 401): Sesión inválida o vencida. Inicie sesión nuevamente."
+      "duracionMs": 3530,
+      "detalle": "La alerta pendiente disponible no muestra una acción visible para mantenerla pendiente"
     },
     {
       "id": "CP-10",
       "requisito": "RF-T02",
       "caso": "CP-10 RF-T02 rechazo sin observación se bloquea",
-      "estado": "BLOQUEADO",
-      "duracionMs": 2985,
-      "detalle": "No se pudo crear la alerta vecinal requerida: El reporte público fue rechazado (HTTP 401): Sesión inválida o vencida. Inicie sesión nuevamente."
+      "estado": "APROBADO",
+      "duracionMs": 4554,
+      "detalle": ""
     },
     {
       "id": "CP-11",
       "requisito": "RF-T02",
       "caso": "CP-11 RF-T02 mantener pendiente sin observación se bloquea",
       "estado": "BLOQUEADO",
-      "duracionMs": 2390,
-      "detalle": "No se pudo crear la alerta vecinal requerida: El reporte público fue rechazado (HTTP 401): Sesión inválida o vencida. Inicie sesión nuevamente."
+      "duracionMs": 4241,
+      "detalle": "La alerta pendiente disponible no muestra una acción visible para mantenerla pendiente"
     },
     {
       "id": "CP-12",
       "requisito": "RF-T02",
       "caso": "CP-12 RF-T02 alerta procesada sale de pendientes y queda en Historial",
-      "estado": "BLOQUEADO",
-      "duracionMs": 2471,
-      "detalle": "No se pudo crear la alerta vecinal requerida: El reporte público fue rechazado (HTTP 401): Sesión inválida o vencida. Inicie sesión nuevamente."
+      "estado": "APROBADO",
+      "duracionMs": 3730,
+      "detalle": ""
     },
     {
       "id": "CP-13",
       "requisito": "RF-T03",
       "caso": "CP-13 RF-T03 reporte ciudadano válido sin iniciar sesión",
       "estado": "FALLIDO",
-      "duracionMs": 2201,
+      "duracionMs": 3048,
       "detalle": "Error: El reporte público fue rechazado (HTTP 401): Sesión inválida o vencida. Inicie sesión nuevamente."
     },
     {
@@ -115,7 +115,7 @@
       "requisito": "RF-T03",
       "caso": "CP-14 RF-T03 reporte válido sin imagen",
       "estado": "FALLIDO",
-      "duracionMs": 2262,
+      "duracionMs": 3208,
       "detalle": "Error: El reporte público fue rechazado (HTTP 401): Sesión inválida o vencida. Inicie sesión nuevamente."
     },
     {
@@ -123,7 +123,7 @@
       "requisito": "RF-T03",
       "caso": "CP-15 RF-T03 reporte válido con imagen consultable",
       "estado": "FALLIDO",
-      "duracionMs": 3074,
+      "duracionMs": 2354,
       "detalle": "Error: El reporte público fue rechazado (HTTP 401): Sesión inválida o vencida. Inicie sesión nuevamente."
     },
     {
@@ -131,7 +131,7 @@
       "requisito": "RF-T03",
       "caso": "CP-16 RF-T03 DNI válidos de 7 y 8 dígitos",
       "estado": "FALLIDO",
-      "duracionMs": 3189,
+      "duracionMs": 2209,
       "detalle": "Error: El reporte público fue rechazado (HTTP 401): Sesión inválida o vencida. Inicie sesión nuevamente."
     },
     {
@@ -139,7 +139,7 @@
       "requisito": "RF-T03",
       "caso": "CP-17 RF-T03 DNI menor a 7 dígitos se rechaza",
       "estado": "APROBADO",
-      "duracionMs": 5589,
+      "duracionMs": 5111,
       "detalle": ""
     },
     {
@@ -147,7 +147,7 @@
       "requisito": "RF-T03",
       "caso": "CP-18 RF-T03 campo obligatorio vacío se rechaza",
       "estado": "APROBADO",
-      "duracionMs": 5163,
+      "duracionMs": 3834,
       "detalle": ""
     },
     {
@@ -155,7 +155,7 @@
       "requisito": "RF-T03",
       "caso": "CP-19 RF-T03 adjunto que no es imagen se rechaza @smoke",
       "estado": "APROBADO",
-      "duracionMs": 2563,
+      "duracionMs": 1839,
       "detalle": ""
     },
     {
@@ -163,7 +163,7 @@
       "requisito": "RF-T03",
       "caso": "CP-20 RF-T03 imagen superior a 3 MB se rechaza @smoke",
       "estado": "APROBADO",
-      "duracionMs": 2020,
+      "duracionMs": 2774,
       "detalle": ""
     },
     {
@@ -171,7 +171,7 @@
       "requisito": "RF-T04",
       "caso": "CP-21 RF-T04 emisión manual completa queda emitida y activa",
       "estado": "APROBADO",
-      "duracionMs": 9296,
+      "duracionMs": 9310,
       "detalle": ""
     },
     {
@@ -179,7 +179,7 @@
       "requisito": "RF-T04",
       "caso": "CP-22 RF-T04 emisión a destinatarios seleccionados de la zona",
       "estado": "APROBADO",
-      "duracionMs": 11063,
+      "duracionMs": 10156,
       "detalle": ""
     },
     {
@@ -187,7 +187,7 @@
       "requisito": "RF-T04",
       "caso": "CP-23 RF-T04 faltan fuente, riesgo, zona o mensaje",
       "estado": "BLOQUEADO",
-      "duracionMs": 3799,
+      "duracionMs": 3609,
       "detalle": "La fuente sólo ofrece opciones no vacías; no puede omitirse desde la interfaz pública"
     },
     {
@@ -195,7 +195,7 @@
       "requisito": "RF-T04",
       "caso": "CP-24 RF-T04 sin canal seleccionado no avanza",
       "estado": "APROBADO",
-      "duracionMs": 3911,
+      "duracionMs": 2964,
       "detalle": ""
     },
     {
@@ -203,7 +203,7 @@
       "requisito": "RF-T04",
       "caso": "CP-25 RF-T04 sin destinatarios no confirma la alerta",
       "estado": "APROBADO",
-      "duracionMs": 8515,
+      "duracionMs": 7680,
       "detalle": ""
     },
     {
@@ -211,7 +211,7 @@
       "requisito": "RF-T01",
       "caso": "CP-26 RF-T01 RF-T04 rol no autorizado no puede emitir",
       "estado": "FALLIDO",
-      "duracionMs": 27849,
+      "duracionMs": 27487,
       "detalle": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed"
     },
     {
@@ -219,7 +219,7 @@
       "requisito": "RF-T04",
       "caso": "CP-27 RF-T04 alerta manual emitida se finaliza y pasa a Historial",
       "estado": "APROBADO",
-      "duracionMs": 11453,
+      "duracionMs": 10121,
       "detalle": ""
     }
   ]
